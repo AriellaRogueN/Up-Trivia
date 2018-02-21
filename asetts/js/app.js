@@ -12,6 +12,7 @@ $.ajax({
         const correct1 = data.results[0].correct_answer
         const incorrect1 = data.results[0].incorrect_answers
         console.log(correct1)
+        
         const question2 = data.results[1].question
         const correct2 = data.results[0].correct_answer
         const incorrect2 = data.results[0].incorrect_answers
@@ -41,9 +42,15 @@ $.ajax({
         const correct10 = data.results[0].correct_answer
         const incorrect10 = data.results[0].incorrect_answers
     
+        const answer = $("#answer").val();
+        if (answer === "T" && answer === correct1) {
+            alert("Acertaste");
+        }
+           else
+           alert("Tu respuesta es incorrecta"); 
+        
     
-    
-    
+
     
     }
 
