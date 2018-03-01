@@ -2,3 +2,29 @@
     margin: 0;
     padding:0;
 }
+
+.init img{
+    margin-top: 2em;
+}
+
+.btn-next{
+    margin-left: 7.5em;
+}
+
+.question h4{
+    color: greenyellow;
+}
+
+.btn-send{
+    background-color: orange;
+    
+}
+
+.btn-send:hover {
+    background-color:orange
+}
+ 
+#answer1 {
+    background-color: rgb(230, 221, 221);
+    
+}

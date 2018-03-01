@@ -41,17 +41,47 @@ $.ajax({
         console.log(question10);
         const correct10 = data.results[0].correct_answer
         const incorrect10 = data.results[0].incorrect_answers
-    
-        const answer = $("#answer").val();
-        if (answer === "T" && answer === correct1) {
-            alert("Acertaste");
-        }
-           else
-           alert("Tu respuesta es incorrecta"); 
-        
-    
 
+// 
+       
     
-    }
+ $(".btn-next").click(function () {
+            $(".question").append("<h4>" + question1 + "</h4>" +
+                                  "<div class='row'>" +
+                                  "<div class='input-field col s3'>" +
+                                  "<input value='' id='answer1' type='text' class='validate'>"  +
+                                  "<label class='active' for='answer1'>False or True</label>"+
+                                  "<button class='btn waves-effect waves-light btn-send' type='submit' name='action'>Submit<i class='material-icons right'>send</i>" +
+                                  "</button></div></div>")
+
+     Materialize.updateTextFields();
+
+             $(".init").hide();                  
+           });
+          
+        $(".btn-send").click(function () {
+            const answer1 = $("#answer1").val();
+            if (answer1 === correct1) {
+                alert("You Win!");
+            }
+            else {
+                alert("Loose");
+            }
+        })
+            
+        
+
+               
+        
+            
+            
+            
+            }   
+
+
 
 });
+
+
+                                
+                                
